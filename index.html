@@ -3,39 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Compras - Con Pruebas</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Mis Proyectos - Estructuras de Datos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <h1>Lista de Compras</h1>
-        
-        <div id="mensaje" class="mensaje"></div>
-        
-        <div class="input-group">
-            <input type="text" id="producto_input" placeholder="Ingresa un producto">
-            <button onclick="agregar_producto_ui()">Agregar</button>
-        </div>
-        
-        <h3>Productos en la lista:</h3>
-        <ul id="lista_ui"></ul>
-        
-        <div class="button-group">
-            <button onclick="mostrar_lista_ui()">Actualizar Lista</button>
-            <button class="eliminar" onclick="vaciar_lista_ui()">Vaciar Lista</button>
+        <div class="header">
+            <i class="fas fa-folder-open icon"></i>
+            <h1>Mis Proyectos</h1>
+            <p class="subtitle">Estructuras de Datos con JavaScript</p>
         </div>
 
-        <div class="pruebas-section">
-            <h2>Pruebas de Funcionalidad</h2>
-            <button onclick="ejecutar_pruebas_ui()" class="pruebas-btn">Ejecutar Pruebas</button>
-            
-            <div id="resultados_pruebas" class="resultados-pruebas">
-                <h3>Resultados:</h3>
-                <div id="pruebas_contenido"></div>
+        <div class="proyectos-grid">
+            <!-- Proyecto 1 -->
+            <div class="proyecto-card">
+                <div class="card-header">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="proyecto-numero">01</span>
+                </div>
+                <div class="card-body">
+                    <h2>Lista de Compras</h2>
+                    <p class="descripcion">Aplicación para gestionar productos usando arreglos y objetos en JavaScript.</p>
+                    <div class="tech-mini">
+                        <span>JS</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+                    <a href="proyecto2/index.html" class="btn-ver">
+                        <span>Ver Proyecto</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Proyecto 2 (placeholder para futuros proyectos) -->
+            <div class="proyecto-card pronto">
+                <div class="card-header">
+                    <i class="fas fa-clock"></i>
+                    <span class="proyecto-numero">02</span>
+                </div>
+                <div class="card-body">
+                    <h2>Próximamente</h2>
+                    <p class="descripcion">Nuevo proyecto en desarrollo. ¡Espéralo pronto!</p>
+                    <div class="tech-mini">
+                        <span>??</span>
+                        <span>??</span>
+                        <span>??</span>
+                    </div>
+                    <button class="btn-ver disabled" disabled>
+                        <span>Pronto</span>
+                        <i class="fas fa-hourglass-half"></i>
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
 
-    <script src="script.js"></script>
+        <div class="footer">
+            <p>Hecho con <i class="fas fa-heart"></i> para Estructuras de Datos</p>
+            <p class="small">© 2026 - Proyectos académicos</p>
+        </div>
+    </div>
 </body>
 </html>
