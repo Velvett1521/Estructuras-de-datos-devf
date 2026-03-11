@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras - Con Pruebas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Compras</h1>
+        
+        <div id="mensaje" class="mensaje"></div>
+        
+        <div class="input-group">
+            <input type="text" id="producto_input" placeholder="Ingresa un producto">
+            <button onclick="agregar_producto_ui()">Agregar</button>
+        </div>
+        
+        <h3>Productos en la lista:</h3>
+        <ul id="lista_ui"></ul>
+        
+        <div class="button-group">
+            <button onclick="mostrar_lista_ui()">Actualizar Lista</button>
+            <button class="eliminar" onclick="vaciar_lista_ui()">Vaciar Lista</button>
+        </div>
+
+        <div class="pruebas-section">
+            <h2>Pruebas de Funcionalidad</h2>
+            <button onclick="ejecutar_pruebas_ui()" class="pruebas-btn">Ejecutar Pruebas</button>
+            
+            <div id="resultados_pruebas" class="resultados-pruebas">
+                <h3>Resultados:</h3>
+                <div id="pruebas_contenido"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
