@@ -1,0 +1,17 @@
+{
+  "name": "gestor-notas",
+  "version": "1.0.0",
+  "description": "Gestor de notas personales con Node.js",
+  "main": "gestor_notas.js",
+  "scripts": {
+    "start": "node gestor_notas.js",
+    "crear": "node gestor_notas.js crear",
+    "listar": "node gestor_notas.js listar",
+    "eliminar": "node gestor_notas.js eliminar",
+    "buscar": "node gestor_notas.js buscar",
+    "ayuda": "node gestor_notas.js ayuda"
+  },
+  "keywords": ["notas", "nodejs", "fs", "filesystem"],
+  "author": "",
+  "license": "MIT"
+}
