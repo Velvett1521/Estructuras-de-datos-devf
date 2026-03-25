@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursion y Backtracking - Buscador de Regalos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Recursion y Backtracking</h1>
+            <p>Busca un regalo especifico en la lista utilizando recursion</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <label for="gift_list_input">Lista de regalos (separados por coma):</label>
+                <textarea 
+                    id="gift_list_input" 
+                    rows="4" 
+                    placeholder="Ejemplo: muneco, carro, pelota, libro, bicicleta, videojuego"
+                ></textarea>
+                
+                <label for="gift_search_input">Regalo a buscar:</label>
+                <input 
+                    type="text" 
+                    id="gift_search_input" 
+                    placeholder="Ejemplo: pelota"
+                    class="search-input"
+                >
+                
+                <button id="search_button" class="btn-primary">Buscar regalo</button>
+            </div>
+
+            <div class="result-section">
+                <div class="result-card">
+                    <h3>Resultado de la busqueda</h3>
+                    <div id="result_message" class="result-message">
+                        ---
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3>Proceso del algoritmo</h3>
+                    <div class="algorithm-steps">
+                        <p><strong>Recursion aplicada:</strong></p>
+                        <ol>
+                            <li>Funcion recursiva busca_regalo(lista, regalo, indice)</li>
+                            <li>Caso base 1: Si indice === lista.length, regalo no encontrado</li>
+                            <li>Caso base 2: Si lista[indice] === regalo, regalo encontrado</li>
+                            <li>Llamada recursiva: busca_regalo(lista, regalo, indice + 1)</li>
+                        </ol>
+                    </div>
+                    <div id="recursion_process" class="process-info"></div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>Proyecto de Recursion y Backtracking - Buscador de regalos</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
