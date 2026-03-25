@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divide y Venceras - Encontrar el Maximo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Divide y Venceras</h1>
+            <p>Encuentra el numero maximo en un arreglo utilizando el paradigma divide and conquer</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <label for="numbers_input">Ingresa los numeros (separados por coma):</label>
+                <textarea 
+                    id="numbers_input" 
+                    rows="4" 
+                    placeholder="Ejemplo: 23, 45, 12, 67, 34, 89, 5, 78, 90, 43"
+                ></textarea>
+                
+                <button id="find_button" class="btn-primary">Encontrar numero maximo</button>
+            </div>
+
+            <div class="result-section">
+                <div class="result-card">
+                    <h3>Resultado</h3>
+                    <div class="result-content">
+                        <div class="max-display">
+                            <span class="label">Numero maximo:</span>
+                            <span id="max_number" class="max-number">---</span>
+                        </div>
+                        <div class="array-display">
+                            <span class="label">Arreglo analizado:</span>
+                            <span id="array_display" class="array-values">---</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3>Proceso del algoritmo</h3>
+                    <div class="algorithm-steps">
+                        <p><strong>Divide and Conquer aplicado:</strong></p>
+                        <ol>
+                            <li>Dividir: Se divide el arreglo en dos mitades</li>
+                            <li>Conquistar: Se resuelve recursivamente cada mitad</li>
+                            <li>Combinar: Se comparan los maximos de ambas mitades</li>
+                            <li>Caso base: Si el arreglo tiene un elemento, ese es el maximo</li>
+                        </ol>
+                    </div>
+                    <div id="divide_process" class="process-info"></div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>Proyecto Divide y Venceras - Busqueda del maximo en un arreglo</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
