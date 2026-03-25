@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding Window - Encuentra la palabra más larga</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Algoritmo Sliding Window</h1>
+            <p>Encuentra la palabra más larga en tu texto utilizando la técnica de ventana deslizante</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <label for="text_input">Ingresa tu texto o párrafo:</label>
+                <textarea 
+                    id="text_input" 
+                    rows="6" 
+                    placeholder="Ejemplo: El desarrollo de software requiere práctica constante y dedicación para dominar los algoritmos..."
+                ></textarea>
+                <button id="find_button" class="btn-primary">Encontrar palabra más larga</button>
+            </div>
+
+            <div class="result-section">
+                <div class="result-card">
+                    <h3>Resultado</h3>
+                    <div class="result-content">
+                        <div class="word-display">
+                            <span class="label">Palabra más larga:</span>
+                            <span id="longest_word" class="longest-word">---</span>
+                        </div>
+                        <div class="length-display">
+                            <span class="label">Longitud:</span>
+                            <span id="word_length" class="length">0</span>
+                            <span>caracteres</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3>Proceso del algoritmo</h3>
+                    <div class="algorithm-steps">
+                        <p><strong>Sliding Window aplicado:</strong></p>
+                        <ol>
+                            <li>Se divide el texto en palabras usando <code>.split(' ')</code></li>
+                            <li>Se desliza una ventana por cada palabra</li>
+                            <li>Se compara la longitud con la palabra más larga actual</li>
+                            <li>Se actualiza el resultado si se encuentra una palabra más larga</li>
+                        </ol>
+                    </div>
+                    <div id="process_info" class="process-info"></div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>Proyecto del Algoritmo Sliding Window - Técnica de ventana deslizante</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
